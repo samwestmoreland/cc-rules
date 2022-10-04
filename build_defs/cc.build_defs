@@ -739,6 +739,12 @@ def _binary_cmds(c, linker_flags, pkg_config_libs, extra_flags='', shared=False,
         cmds['cover'] = f'"$TOOL" -o "$OUT" {dbg_flags} {extra_flags} {_COVERAGE_FLAGS} -lgcov'
 
     if CONFIG.CC.DSYM_TOOL:
+        log.info('dsym_tool is set')
+    else:
+        log.info('dsym_tool is not set')
+
+
+    if CONFIG.CC.DSYM_TOOL:
         dbg = cmds['dbg']
         cmds['dbg'] = f'{dbg} && {CONFIG.CC.DSYM_TOOL} $OUT'
     return cmds, [CONFIG.CC.CC_TOOL if c else CONFIG.CC.CPP_TOOL]
