@@ -2,7 +2,7 @@
 version = 16.27.1
 
 [parse]
-preloadbuilddefs = build_defs/cc.build_defs
+preloadsubincludes = //build_defs:cc
 
 [PluginDefinition]
 name = cc
@@ -83,4 +83,3 @@ Inherit = true
 ConfigKey = DefaultNamespace
 DefaultValue =
 
-[Plugin "cc"]
