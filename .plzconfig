@@ -1,5 +1,5 @@
 [please]
-version = >=16.12.1
+version = 16.27.1
 
 [parse]
 preloadbuilddefs = build_defs/cc.build_defs
@@ -82,3 +82,5 @@ Inherit = true
 [PluginConfig "default_namespace"]
 ConfigKey = DefaultNamespace
 DefaultValue =
+
+[Plugin "cc"]
