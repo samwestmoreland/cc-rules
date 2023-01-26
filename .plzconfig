@@ -82,4 +82,3 @@ Inherit = true
 [PluginConfig "default_namespace"]
 ConfigKey = DefaultNamespace
 DefaultValue =
-
